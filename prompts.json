@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Title example 1",
+        "prompt": "This is a test prompt for prompt 1"
+    },
+    {
+        "id": 2,
+        "title": "Title example 2",
+        "prompt": "I am in a class called cs361 and my name is"
+    }
+]
