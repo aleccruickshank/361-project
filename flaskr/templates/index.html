@@ -1,0 +1,31 @@
+<html>
+<!-- Header Section -->
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+
+    <nav>
+        <ul id="nav-container">
+        {% if g.user %}
+            <li id="user-id"><span>{{ g.user['username'] }}</span>
+            <li ><a id="logout" href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+            <li><a id="register" href="{{ url_for('auth.register') }}">Register</a>
+            <li><a id="login" href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+        </ul>
+    </nav>
+
+<!--Body Section-->
+    <body>
+        <h1 id="main-title">Test your typing skills.</h1>
+        <div id="menu-container">
+            <ul>
+                <li ><a id="play" href="/play">Play: Test your skills</a></li>
+                <li ><a id="practice" href="/practice">Practice: Improve your WPM</a></li>
+                <li ><a id="leaderboard" href="/leaderboard">Leaderboard: View scores</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

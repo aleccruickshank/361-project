@@ -1,7 +1,13 @@
 const express = require('express'); //need to install express npm install express
 const fs = require('fs'); //this is used to read in from the prompts.json file
+const cors = require('cors')
 const app = express();
 const port = 5213; //this is the port the server is running on
+
+const corsOptions = {
+  origin: 'http://127.0.0.1:3000',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
 
 let prompts;
 
@@ -14,13 +20,13 @@ catch (error) {
   prompts = [];
 }
 
-app.get('/prompts', (req, res) => {
+app.get('/prompts', cors(corsOptions), (req, res) => {
   //creates new array without id
-  const promptfiltered = prompts.map(({ id, title, prompt }) => ({ title, prompt }));
+  const promptfiltered = prompts.map(({ id, title, prompt }) => ({ id, title, prompt }));
   res.json(promptfiltered);
 });
 
-app.get('/prompts/:promptId', (req, res) => {
+app.get('/prompts/:promptId', cors(corsOptions), (req, res) => {
   const promptId = parseInt(req.params.promptId);
   const prompt = prompts.find((p) => p.id === promptId); //compares promptid in http get with promptid in json
 
@@ -30,8 +36,9 @@ app.get('/prompts/:promptId', (req, res) => {
   }
 
   //sets a new const with out promptId
-  const { id, ...promptfiltered } = prompt;
-  res.json(promptfiltered);
+//  const { id, ...promptfiltered } = prompt;
+//  res.json(promptfiltered);
+  res.json(prompt);
 });
 
 //checks if there is an app listen error

@@ -1,12 +1,52 @@
 [
     {
+        "id": 0,
+        "title": "The Mysterious Door",
+        "prompt": "Beyond the ancient door, shrouded in darkness, an unimaginable treasure awaits those brave enough to venture forth."
+    },
+    {
         "id": 1,
-        "title": "Title example 1",
-        "prompt": "This is a test prompt for prompt 1"
+        "title": "The Forgotten Diary",
+        "prompt": "Within the dusty pages of a forgotten diary lies the tale of a lost civilization, waiting to be unraveled by an intrepid explorer."
     },
     {
         "id": 2,
-        "title": "Title example 2",
-        "prompt": "I am in a class called cs361 and my name is"
+        "title": "The Enchanted Forest",
+        "prompt": "Deep within the mystical forest, whispers of magic float through the air, beckoning wanderers to discover the secrets that lie within."
+    },
+    {
+        "id": 3,
+        "title": "The Lost Map",
+        "prompt": "A weathered map, hidden away for centuries, holds the key to uncovering a hidden realm brimming with untold wonders and perils."
+    },
+    {
+        "id": 4,
+        "title": "The Whispering Winds",
+        "prompt": "Beneath the starlit sky, ethereal whispers ride on gentle gusts of wind, revealing cryptic messages from realms beyond our own."
+    },
+    {
+        "id": 5,
+        "title": "The Time Traveler's Watch",
+        "prompt": "A peculiar watch, infused with the power of time itself, grants its wearer the ability to journey across the ages, altering history's course."
+    },
+    {
+        "id": 6,
+        "title": "The Cursed Painting",
+        "prompt": "Within the strokes of a cursed painting, trapped souls yearn for release, their haunted eyes pleading for someone to break the spell."
+    },
+    {
+        "id": 7,
+        "title": "The Forbidden Scroll",
+        "prompt": "An ancient scroll, guarded by ancient forces, holds forbidden knowledge capable of bestowing unimaginable wisdom or unleashing chaos upon the world."
+    },
+    {
+        "id": 8,
+        "title": "The Singing Stone",
+        "prompt": "In the heart of a forgotten cavern, a radiant stone emits a mesmerizing melody, capable of healing wounds and stirring long-lost memories."
+    },
+    {
+        "id": 9,
+        "title": "The Celestial Mirror",
+        "prompt": "A mirror, forged from the fragments of distant stars, reflects not only one's physical appearance but also the depths of their truest desires and fears."
     }
 ]

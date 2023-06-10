@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Navigation and Menus */
+#nav-container {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+#nav-container li {
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#register {
+    color: #fccd53;
+}
+
+#login {
+    color: #fccd53;
+}
+
+#home-alt {
+    color: #fccd53;
+}
+
+#home a {
+    color: white;
+}
+
+#menu-container {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#menu-container li {
+    font-size: 35px;
+    list-style: none;
+    padding: 15px;
+}
+
+#menu-container a {
+    padding: 10px;
+    /* color: #fccd53; main text color */
+    margin-bottom: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#play {
+    border: 2px solid #bdff7a;
+    color: #bdff7a;
+}
+
+#play:hover {
+    background-color: #bdff7a;
+    border: 2px solid #bdff7a;
+    color: #07132b;
+}
+
+#practice {
+    border: 2px solid #94d1f7;
+    color: #94d1f7;
+}
+
+#practice:hover {
+    background-color: #94d1f7;
+    border: 2px solid #94d1f7;
+    color: #07132b;
+}
+
+#leaderboard {
+    border: 2px solid #fa7f52;
+    color: #fa7f52;
+}
+
+#leaderboard:hover {
+    border: 2px solid #fa7f52;
+    background-color: #fa7f52;
+    color: #07132b;
+}
+
+#user-id {
+    color: #fccd53;
+}
+
+#logout {
+    color: #fa7f52;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    background-color: #07132b;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+#main-title {
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+/* Race elements */
+
+#prompt-title {
+    color: #fccd53;
+    text-align: center;
+}
+#prompt {
+    color: #6b8ac9;
+    font-size: 20px;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+textarea {
+    color: white;
+    width: 300px;
+    height: 25px;
+    overflow: hidden;
+    margin-top: 30px;
+    font-size: 20px;
+    resize: none;
+    background-color: transparent;
+
+}
+
+#save {
+    margin-top: 30px;
+}
+
+#save-data {
+
+}
+form label {
+    font-size: 20px;
+    color: white;
+}
+input[type=number] {
+    background-color: transparent;
+    border: none;
+}
+
+#save-submit {
+    background-color: transparent;
+    border: 2px solid #fccd53;
+    color: #fccd53;
+    font-size: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#save-submit:hover {
+    background-color: #fccd53;
+    border: 2px solid #fccd53;
+    color: #07132b;
+    font-size 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+#wpm-output {
+    font-size: 20px;
+    color: #bdff7a;
+}
+
+#mistakes-output {
+    font-size: 20px;
+    color: #fa7f52;
+}
+
+/* Leaderboard elements */
+
+#leaderboard-table {
+    border-collapse: collapse;
+}
+
+#leaderboard-table td, #leaderboard-table th {
+  border: 1px solid #6b8ac9;
+  padding: 8px;
+  color: #fccd53;
+}
+
+#leaderboard-table tr:nth-child(even){
+    background-color: #14326e;
+   }
+
+#leaderboard-table tr:hover {
+    background-color: black;
+    }
+
+#leaderboard-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #fccd53;
+  color: #07132b;
+}
+
+#tooltip {
+    font-size: 10px;
+    color: #b3b3b3;
+    display: block;
+}
+
+.incorrect {
+    color: #fa7f52;
+    text-decoration: underline;
+}
+
+.correct {
+    color: #fccd53;
+}
+
