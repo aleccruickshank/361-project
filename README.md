@@ -1,41 +1,17 @@
-# 361-project
+# Typing Race Application
 
-Communication Contract
+Overview:
 
-Requesting Data:
-	
-	The REST API can be accessed through HTTP requests and responses in JSON format. All requests must be in the object format { key: value}. The two keys needed for this microservice are:
+Welcome! This is a typing race web application, users will be served a prompt to type after entering a race. Upon completion of the prompt, users will see their typing speed in the form of words per minute (WPM), along with the amount of mistakes they have made.
 
-		username
-		password
+This application was built using flask as the web framework, and SQlite3 for data persistance. All race logic was written in JavaScript.
 
-An example object would look like this:
+In the future, I'll be looking to add profile pages, and the ability to race against others.
 
-	{ username: “user1”, password: “password1” }
+Run the Project:
 
-All functionality can be accessed through GET, POST, PUT, and DELETE methods.
+The project can be installed and ran locally. Install all dependencies, and run python app.py and node partnermicroservice.js.
 
-The two routes to access are (with an example localhost):
+Example: 
 
-	http://127.0.0.1:5000/validate
-
-	http://127.0.0.1:5000/users
-
-Validate:
-
-
-	This route only supports a POST method, a username and password can be passed to it as a JSON object, it will return a boolean value if the credentials are valid or not. 
-
-Users:
-
-	This route supports GET, POST, PUT, and DELETE methods. 
-
-	GET: Returns the dictionary of all users.
-
-	POST: Passing an object with both a username and password will update the password for the given username.
-
-	PUT: Passing an object with both a username and password will create a new user for the given credentials, if it does not already exist.
-
-	DELETE: Passing an object with only a username, will remove that user from the dictionary of users.
-  
-  ![Untitled-1](https://user-images.githubusercontent.com/97071456/236998754-33abec20-ae71-494c-ba71-9f8feaeaaeb9.png)
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDIwYjZkM2NjYjFmZTg5OTdiZTMwMjA3OGRjMTU0YWUzMmFiNmUxOSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/t6JHkjgGfcCt8AGadn/giphy.gif)
